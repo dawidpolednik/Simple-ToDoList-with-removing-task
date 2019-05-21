@@ -6,7 +6,7 @@ class ToDoItems extends Component {
     return (
       <ul style={{ listStyleType: 'none' }}>
         {ToDo.map((item, index) => (
-          <li key={index}> <ToDoItem item={item} index={index} removeItem={removeItem} /></li>
+          <li key={item.toString()}> <ToDoItem item={item} index={index} removeItem={removeItem} /></li>
         )
         )}
       </ul>
